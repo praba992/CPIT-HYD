@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mystyle{
+            width:100%;
+            padding:25px;
+            background-color: coral;
+            color:white ;
+            font-size: 25px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <p> Click the "Try it " button to toggle bewtween  adding and removing  the 
+        "my style "class name of the DIV element :
+    </p>
+    <button onclick="myfunction()">try it</button>
+    <div id="mydiv">
+        this is my div
+    </div>
+    <script>
+        function myfunction(){
+        var element=document.getElementById("mydiv");
+        element.classList.toggle("mystyle");
+        }
+    </script>
+</body>
+</html>
