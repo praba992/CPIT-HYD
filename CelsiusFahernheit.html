@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text " id="uinput" placeholder="Enter the temparature in fahernheit">
+    <button onclick="convert()"> submit</button>
+    <p>result</p>
+    <span id ="result"></span>
+    <script>
+        var celsius = 0;
+        var fahernheit=0;
+        function convert(){
+            fahernheit= parseFloat(document.getElementById('uinput').value);
+            console.log(fahernheit);
+            celsius = ( fahernheit-32)*(5/9);
+            // fathrenheit = ( celsius*(5/9))+32;
+            document.getElementById("result").innerHTML=celsius ;
+        }
+    </script>
+</body>
+</html>

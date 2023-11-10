@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <p id="length"></p>
+ <p id ="slice"></p>
+ <p id="slice2"></p>
+ <p id="slice3"></p>
+ <p id="substring"></p>
+ <p id="substring1"></p>
+ <p id="substring2"></p>
+ <p id="rpl"></p>
+ <script>
+    let text = " MAHESH, PRABHAS, ALLUARJUN";
+    let heros=text.length;
+    document.getElementById("length").innerHTML=heros;
+
+    // slice method
+
+    let slice =text.slice(6,10);
+    document.getElementById("slice").innerHTML=slice;
+
+    let pst=text.slice(9);
+    document.getElementById("slice2").innerHTML=pst;
+
+    let nag=text.slice(-9-9);
+    document.getElementById("slice3").innerHTML=nag;
+
+    // substring
+
+    let sub =text.substring(0,8);
+    document.getElementById("substring").innerHTML=sub;
+
+    let sub1 =text.substring(4);
+    document.getElementById("substring1").innerHTML=sub1;
+
+    let sub2= text.substring(-12,);
+    document.getElementById("substring2").innerHTML=sub2;
+
+    // replace
+    let  relc= " hi im kukki  im fine ";
+     let replcwrd=relc.replace(" kukki","mukki");
+     document.getElementById("rpl").innerHTML=replcwrd;
+     
+    
+    
+
+
+ </script>
+</body>
+</html>

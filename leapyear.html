@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leap year  check</title>
+    <style>
+        div{
+            margin-left: auto;
+            margin-right: auto;
+            background-color: cornflowerblue;
+            padding: 20px;
+            width: 400px;
+            color:black;
+            margin-top: 150px;
+            box-shadow: 5px 6px gray;
+            
+
+        }
+        input{
+            padding: 10px;
+            width: 150px;
+            margin-bottom: 10px;
+            border-color:black;
+        }
+        button{
+            border: none;
+            border-radius: 5px;
+            color: chartreuse;
+            padding: 10px;
+            width:100px;
+            background-color:dimgrey;
+        }
+        h4{
+            background-color: lawngreen;
+            font-weight: bold;
+            padding: 10 px;
+            color: black;
+           text-shadow: 2px 2px 2px gray;
+
+
+        }#result{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+        }
+        h1{
+            text-shadow: 2px 2px 5px rgb(78, 76, 76);
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1> Program Leap Year Check </h1>
+      Enter year 
+        <input type="text" id="leap">
+        <button onclick="leapcheck()">Check</button>
+        <h4>Result :<span id="result"> </span></h4>
+    </div>
+    <script>
+     function leapcheck(){
+        var x = parseInt(document.getElementById("leap").value);
+        if((x%4==0)&& (x%100!=0)){
+            document.getElementById("result").innerHTML=+"is leap year";
+
+        }
+        else if (x%400==0){
+            document.getElementById("result").innerHTML=x+"is leap year";
+        }
+        else{
+            document.getElementById("result").innerHTML=x+"is not leap  year";
+        }
+     }
+    </script>
+</body>
+</html>
